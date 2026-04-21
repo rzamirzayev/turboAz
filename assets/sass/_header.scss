@@ -1,0 +1,26 @@
+header {
+    background-color: #ca1016;
+    #header{
+      height: 60px;
+      width: 1080px !important;
+      margin: 0 auto;
+      padding-right:25px !important;
+      .navbar{
+  
+        >a{
+          color: white;
+          text-decoration: none;
+          margin: 0 7px;
+          font-size: 20px;
+          letter-spacing: -0.4;
+        }
+      }
+      .button {
+        margin-top: 7px;
+        button{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  

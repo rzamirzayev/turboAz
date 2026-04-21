@@ -1,0 +1,22 @@
+#register{
+  display: none;
+  .tittle{
+    height: 60px;
+    padding: 0 20px;
+  }
+  
+  select{
+    width: 285px;
+    border-radius: 5px;
+    height: 32px;
+  }
+  
+  input{
+    border-radius: 5px;
+    height: 32px;
+  }
+  
+  input.wide{
+    width:80px
+  }
+}

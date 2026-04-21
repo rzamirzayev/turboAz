@@ -1,0 +1,270 @@
+header {
+  background-color: #ca1016;
+}
+header #header {
+  height: 60px;
+  width: 1080px !important;
+  margin: 0 auto;
+  padding-right: 25px !important;
+}
+header #header .navbar > a {
+  color: white;
+  text-decoration: none;
+  margin: 0 7px;
+  font-size: 20px;
+  letter-spacing: -0.4;
+}
+#intro-video{
+  width: 100%;
+  height: 100%;
+  padding: 0px 100px;
+}
+header #header .button {
+  margin-top: 7px;
+}
+header #header .button button {
+  font-size: 20px;
+}
+
+main {
+  width: 1080px !important;
+  background-color: #f6f7fa;
+  margin: 0 auto;
+}
+
+#credit {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 40px;
+  background-color: white;
+}
+#credit #creditCheck {
+  opacity: 0;
+}
+#credit #creditLabel {
+  padding-left: 5px;
+}
+
+#barter {
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+}
+#barter #barterCheck {
+  opacity: 0;
+}
+#barter #barterLabel {
+  padding-left: 5px;
+}
+
+#announcument .section-info {
+  background-color: #f1f3f7;
+  height: 50px;
+}
+#announcument .section-info #section-name {
+  margin-left: 20px;
+  margin-top: 12px;
+}
+#announcument .col-3 {
+  flex: 0 0 25%;
+  max-width: 22%;
+  border-radius: 10px;
+  margin: 5px 15px;
+  padding: 0 !important;
+  overflow: hidden;
+}
+#announcument .col-3:hover {
+  box-shadow: 0 0 20px rgba(33, 33, 33, 0.2);
+  border-radius: 10px;
+}
+#announcument .col-3 img {
+  width: 100%;
+  height: 170px;
+}
+#announcument .col-3 .car-price {
+  font-size: 20px;
+}
+#announcument .col-3 .info {
+  background-color: white;
+}
+
+#editCarArea {
+  display: none;
+}
+#editCarArea #myInput {
+  background-image: url("/css/searchicon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+#editCarArea #myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+#editCarArea #myTable th, #editCarArea #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+#editCarArea #myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+#editCarArea #myTable tr.header, #editCarArea #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+#deletearea {
+  display: none;
+}
+
+#register {
+  display: none;
+}
+#register .tittle {
+  height: 60px;
+  padding: 0 20px;
+}
+#register select {
+  width: 285px;
+  border-radius: 5px;
+  height: 32px;
+}
+#register input {
+  border-radius: 5px;
+  height: 32px;
+}
+#register input.wide {
+  width: 80px;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;
+}
+
+footer {
+  width: 1080px !important;
+  margin: 0 auto;
+}
+footer #contact {
+  height: 50px;
+  margin: auto 0 !important;
+  padding: 0 25px !important;
+  background-color: #f6f7fa;
+}
+footer #contact a {
+  color: black;
+  text-decoration: none;
+}
+footer #contact a :hover {
+  color: red;
+}
+footer #contact #contact-items img {
+  width: 22px;
+  color: rgb(185, 185, 185) !important;
+}
+footer #contact #contact-items img :hover {
+  color: red;
+}
+footer #rules-and-law a {
+  color: black;
+}
+footer #innformation-advertising {
+  background-color: #ca1016;
+  padding: 12px 10px 0;
+  color: white;
+}
+footer #innformation-advertising a {
+  color: white;
+}
+
+.filter-min input{
+  position: absolute;
+  border:1px solid transparent;
+  top: 2px;
+  left: 2px;
+  outline: none;
+  padding: 23px 0 0px 6px;
+  border-radius: 7px 0 0 7px;
+  width: 100%;
+ 
+}
+.filter-min span{
+position: absolute;
+z-index: 1;
+top: 16px;
+font-size: 15px;
+left: 8px;
+transition: .2s;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.filter-min{
+  width: 100%;
+  height: 50px;
+  border-right: 1px solid #dfe3e9;
+  position: relative;
+  color: #8d94ad;
+}
+.filter-min input:focus + .focus , .filter-min input:valid + .focus {
+  top: 8px;
+  font-size: 13px;
+}
+
+.filter-max input{
+  position: absolute;
+  border:1px solid transparent;
+  top: 2px;
+  left: 2px;
+  outline: none;
+  padding: 23px 0 0px 6px;
+  width: 100%;
+  border-radius: 0 7px 7px 0;
+ 
+}
+.filter-max span{
+position: absolute;
+z-index: 1;
+top: 16px;
+font-size: 15px;
+left: 8px;
+transition: .2s;
+font-family: Arial, Helvetica, sans-serif;
+color: #8d94ad;
+
+
+}
+.filter-max{
+  width: 100%;
+  height: 50px;
+  border-left: 0px;
+  position: relative;
+  color: #8d94ad;
+}
+.filter-max input:focus + .focus , .filter-max input:valid + .focus {
+  top: 8px;
+  font-size: 13px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.filterPrice i {
+    position: absolute;
+    z-index: 1;
+    right: 5px;
+    top: 25px;
+    cursor: pointer;
+}
+.display-none{
+    display: none !important;
+}
+/*# sourceMappingURL=style.css.map */
