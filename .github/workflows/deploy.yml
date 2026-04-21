@@ -15,16 +15,12 @@ jobs:
 
       - name: Prepare target folder
         run: |
-          sudo mkdir -p /usr/share/nginx/html/turboaz
+          mkdir -p /usr/share/nginx/html/turboaz
 
       - name: Clean old files
         run: |
-          sudo find /usr/share/nginx/html/turboaz -mindepth 1 -maxdepth 1 -exec rm -rf {} \;
+          find /usr/share/nginx/html/turboaz -mindepth 1 -maxdepth 1 -exec rm -rf {} \;
 
       - name: Copy project files
         run: |
-          sudo cp -r index.html css js assets /usr/share/nginx/html/turboaz/
-
-      - name: Reload nginx
-        run: |
-          sudo systemctl reload nginx
+          cp -r index.html css js assets /usr/share/nginx/html/turboaz/
