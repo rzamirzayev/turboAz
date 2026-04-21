@@ -1,0 +1,30 @@
+name: Deploy TurboAz to local RHEL VM
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, Linux, X64]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Prepare target folder
+        run: |
+          sudo mkdir -p /usr/share/nginx/html/turboaz
+
+      - name: Clean old files
+        run: |
+          sudo find /usr/share/nginx/html/turboaz -mindepth 1 -maxdepth 1 -exec rm -rf {} \;
+
+      - name: Copy project files
+        run: |
+          sudo cp -r index.html css js assets /usr/share/nginx/html/turboaz/
+
+      - name: Reload nginx
+        run: |
+          sudo systemctl reload nginx
